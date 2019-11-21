@@ -12,6 +12,8 @@
 		3FBF7B98238609310014C218 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FBF7B96238609310014C218 /* Main.storyboard */; };
 		3FBF7B9A238609330014C218 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FBF7B99238609330014C218 /* Assets.xcassets */; };
 		3FBF7B9D238609330014C218 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FBF7B9B238609330014C218 /* LaunchScreen.storyboard */; };
+		3FBF7BA5238609E00014C218 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3FBF7BA4238609E00014C218 /* GoogleService-Info.plist */; };
+		47AA139F3BE5A69E980C457C /* Pods_SimpleTask_Maria.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D9BCE993ADEF018B9E22255 /* Pods_SimpleTask_Maria.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,10 @@
 		3FBF7B99238609330014C218 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FBF7B9C238609330014C218 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FBF7B9E238609330014C218 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FBF7BA4238609E00014C218 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		540EF82A756BB893CB2AC695 /* Pods-SimpleTask-Maria.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleTask-Maria.release.xcconfig"; path = "Target Support Files/Pods-SimpleTask-Maria/Pods-SimpleTask-Maria.release.xcconfig"; sourceTree = "<group>"; };
+		6D9BCE993ADEF018B9E22255 /* Pods_SimpleTask_Maria.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleTask_Maria.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7CD65943C4CEB1A206D3B73 /* Pods-SimpleTask-Maria.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleTask-Maria.debug.xcconfig"; path = "Target Support Files/Pods-SimpleTask-Maria/Pods-SimpleTask-Maria.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47AA139F3BE5A69E980C457C /* Pods_SimpleTask_Maria.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				3FBF7B91238609310014C218 /* SimpleTask-Maria */,
 				3FBF7B90238609310014C218 /* Products */,
+				F560AAE7C42A1CFD99A21B40 /* Pods */,
+				C30CD7D2AC0F3F3B0F74599F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +69,27 @@
 				3FBF7B99238609330014C218 /* Assets.xcassets */,
 				3FBF7B9B238609330014C218 /* LaunchScreen.storyboard */,
 				3FBF7B9E238609330014C218 /* Info.plist */,
+				3FBF7BA4238609E00014C218 /* GoogleService-Info.plist */,
 			);
 			path = "SimpleTask-Maria";
+			sourceTree = "<group>";
+		};
+		C30CD7D2AC0F3F3B0F74599F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D9BCE993ADEF018B9E22255 /* Pods_SimpleTask_Maria.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F560AAE7C42A1CFD99A21B40 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B7CD65943C4CEB1A206D3B73 /* Pods-SimpleTask-Maria.debug.xcconfig */,
+				540EF82A756BB893CB2AC695 /* Pods-SimpleTask-Maria.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3FBF7BA1238609330014C218 /* Build configuration list for PBXNativeTarget "SimpleTask-Maria" */;
 			buildPhases = (
+				C7789E22F7894515D5D985FD /* [CP] Check Pods Manifest.lock */,
 				3FBF7B8B238609310014C218 /* Sources */,
 				3FBF7B8C238609310014C218 /* Frameworks */,
 				3FBF7B8D238609310014C218 /* Resources */,
+				EA2333F74903841A131D6C8F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,12 +153,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FBF7B9D238609330014C218 /* LaunchScreen.storyboard in Resources */,
+				3FBF7BA5238609E00014C218 /* GoogleService-Info.plist in Resources */,
 				3FBF7B9A238609330014C218 /* Assets.xcassets in Resources */,
 				3FBF7B98238609310014C218 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C7789E22F7894515D5D985FD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimpleTask-Maria-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA2333F74903841A131D6C8F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SimpleTask-Maria/Pods-SimpleTask-Maria-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SimpleTask-Maria/Pods-SimpleTask-Maria-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SimpleTask-Maria/Pods-SimpleTask-Maria-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3FBF7B8B238609310014C218 /* Sources */ = {
@@ -280,6 +353,7 @@
 		};
 		3FBF7BA2238609330014C218 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7CD65943C4CEB1A206D3B73 /* Pods-SimpleTask-Maria.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +371,7 @@
 		};
 		3FBF7BA3238609330014C218 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 540EF82A756BB893CB2AC695 /* Pods-SimpleTask-Maria.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
